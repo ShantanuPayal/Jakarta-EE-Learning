@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+<property name="show_sql">true</property>
+<!-- if not given true u wont see sql genrated from sql -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.password">shantanu1</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Bit</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- dilect: generates database specific SQL -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- -this property creates table automatically -->
+        <mapping class="mypack.Employee"/> 
+        <!-- mapping required to know: my entitie is employee and my package is mypack  -->
+    </session-factory>
+</hibernate-configuration>
+<!-- hibernate Configuration file
+root tags in hibernate? imp for ccee
+hibernate:hibernate-configuration/may be
+
+@trasnient will ensure that column will not be created: write @trainsient on head of member u dont want column
+ -->

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Form Example</title>
+  <style>
+    /* Styling for the container */
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f0f0f0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Styling for header and footer */
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Styling for the form inputs */
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Form Example</h1>
+  </header>
+  <div class="container">
+    <form action="BookServ" method="post">
+      <label for="name">Enter name:</label>
+      <input type="text" name="name" id="name">
+      <br>
+      <label for="subject">Enter subject:</label>
+      <input type="text" name="subject" id="subject">
+      <br>
+      <label for="cost">Enter cost:</label>
+      <input type="text" name="cost" id="cost">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <footer>
+    &copy; 2023 Form Example
+  </footer>
+</body>
+</html>
